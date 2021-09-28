@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 ## Description
-This app generates a profile page with quick overview of your team. Based on the inputs you type into the terminal, the application will return to you a display with all of your team members and their contacts.
+This app generates a profile page with quick overview of your team. Based on the inputs you type into the terminal, the application will return an easy to process display with all of your team members and their contacts.
 
 ![alt text](https://github.com/DylanBarstow7/TeamProfileGenerator/blob/master/Assets/img/TeamProfileGenerator.PNG)
 
