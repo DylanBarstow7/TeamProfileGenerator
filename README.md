@@ -4,8 +4,8 @@
 - [Discription](#Description)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Testing](#Testing)
-- [Questions / Contacts](#Contacts)
+- [Testing](#Test)
+- [Questions / Contacts](#Contact)
 
 ## Description
 This app generates a profile page with quick overview of your team. Based on the inputs you type into the terminal, the application will return an easy to process display with all of your team members and their contacts.
