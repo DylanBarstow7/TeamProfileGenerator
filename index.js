@@ -1,10 +1,17 @@
 const inquirer = require('Inquirer');
 const path = require('path');
 const fs = require('fs');
-const Employee = require('./Assets/js/employee.js')
-const Manager = require('./Assets/js/emp types/manager.js');
-const Intern = require('./Assets/js/emp types/intern.js');
-const Engineer = require('./Assets/js/emp types/engineer.js');
+const Employee = require('./lib/employee.js');
+const Manager = require('./lib/emp types/manager.js.js');
+const Intern = require('./lib/emp types/intern.js.js');
+const Engineer = require('./lib/emp types/engineer.js');
+
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team.html");
+
+const render = require('./lib/htmlRenderer.js');
+
+
 
 const PORT = 8080;
 let teamMembers = [];
@@ -39,7 +46,7 @@ function createManager() {
             },
         ])
         .then(response => {
-            const manager = new Manager(response.managerName, response.managerId, response.managerEmail, response.managerOffice)
+            const manager = new Manager(response.managerName, response.managerId, response.managerEmail, response.officeNumber)
             employees.push(manager)
             choosePosition()
             
@@ -51,7 +58,7 @@ function choosePosition() {
         .prompt ({
             type: 'list',
             message: "What type of employee would you like to add?",
-            choices: ["Manager", "Engineer", "Intern", "Cancel"],
+            choices: ["Manager", "Engineer", "Intern", "Finished"],
             name: 'addNext',
         })
         .then (response => {
