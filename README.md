@@ -1,6 +1,7 @@
 # Team Profile Generator
 
 ## Table of Contents
+- [Discription](#Description)
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Testing](#Testing)
