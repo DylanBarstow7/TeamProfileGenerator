@@ -1,7 +1,7 @@
 const inquirer = require('Inquirer');
 const path = require('path');
 const fs = require('fs');
-const Employee = require('./lib/employee');
+const Employee = require('./lib/employee.js');
 const Manager = require('./lib/emp types/manager.js');
 const Intern = require('./lib/emp types/intern.js');
 const Engineer = require('./lib/emp types/engineer.js');
@@ -100,8 +100,7 @@ function createEngineer() {
             employees.push(engineer)
             choosePosition()
         })
-    }
-
+};
 
 function createIntern() {
     inquirer
