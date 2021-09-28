@@ -13,11 +13,6 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require('./lib/htmlRenderer.js');
 
-
-const PORT = 8080;
-let teamMembers = [];
-let finished = false;
-
 createManager()
 
 let employees = []
@@ -42,7 +37,7 @@ function createManager() {
             },
             {
                 type: "input",
-                name: "managerOffice",
+                name: "officeNumber",
                 message: "What is your manager's office number?"
             },
         ])
@@ -96,15 +91,14 @@ function createEngineer() {
             },
             {
                 type: "input",
-                name: "engineersGitHub",
+                name: "github",
                 message: "What's your Engineer's GitHub account name?"
             },
         ])
         .then(response => {
-            const engineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.getUsername)
+            const engineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.engineerGithub)
             employees.push(engineer)
             choosePosition()
-            
         })
     }
 
