@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const Employee = require('./Assets/js/employee.js')
 const Manager = require('./Assets/js/manager.js');
+const Intern = require('./Assets/js/intern.js')
 
 const PORT = 8080;
 let teamMembers = [];
