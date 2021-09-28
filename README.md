@@ -17,7 +17,7 @@ Inquirer and Node.js
 Audio Tutorial: https://watch.screencastify.com/v/anZ4L0LZb0QlRRgDxptX
 ## Usage
 Instructions:
-Clone into my repo then move in the TeamProfileGenerator folder.  Next you will run 'node index.js' in your terminal.  This will initiate the application where you begin answering questions on each member of the team.
+Clone into my repo then move into the TeamProfileGenerator folder.  Next you will run 'node index.js' in your terminal.  This will initiate the application where you begin answering questions on each member of the team.
 
 ## Test
 In order to test this application you must have jest installed.
