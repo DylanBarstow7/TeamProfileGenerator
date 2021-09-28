@@ -19,7 +19,9 @@
     "homepage": "https://github.com/DylanBarstow7/TeamProfileGenerator",
     "dependencies": {
         "bulma": "^0.9.3",
-        "inquirer": "^8.1.2",
-        "jest": "^27.0.6"
+        "inquirer": "^8.1.2"
+    },
+    "devDependencies": {
+        "jest": "^27.2.3"
     }
 }
