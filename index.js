@@ -5,7 +5,6 @@ const Manager = require('./lib/manager.js');
 const Intern = require('./lib/intern.js');
 const Engineer = require('./lib/engineer.js');
 const render = require('./lib/htmlRenderer.js');
-const Employee = require('./lib/employee.js');
 
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
@@ -97,7 +96,7 @@ function createEngineer() {
             },
         ])
         .then(response => {
-            const engineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.engineerGithub)
+            const engineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.github)
             employees.push(engineer)
             choosePosition()
         })
