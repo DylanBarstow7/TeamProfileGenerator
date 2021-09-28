@@ -1,17 +1,18 @@
 const inquirer = require('Inquirer');
 const path = require('path');
 const fs = require('fs');
+const Manager = require('./lib/manager.js');
+const Intern = require('./lib/intern.js');
+const Engineer = require('./lib/engineer.js');
+const render = require('./lib/htmlRenderer.js');
 const Employee = require('./lib/employee.js');
-const Manager = require('./lib/emp types/manager.js');
-const Intern = require('./lib/emp types/intern.js');
-const Engineer = require('./lib/emp types/engineer.js');
-const { create } = require('domain');
 
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require('./lib/htmlRenderer.js');
+const { create } = require('domain');
+
 
 createManager()
 
@@ -100,7 +101,7 @@ function createEngineer() {
             employees.push(engineer)
             choosePosition()
         })
-};
+}
 
 function createIntern() {
     inquirer
