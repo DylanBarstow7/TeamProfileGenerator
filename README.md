@@ -12,10 +12,9 @@ This app generates a profile page with quick overview of your team. Based on the
 - [Questions / Contacts](#Contacts)
 ## Installation
 Apps required to run this program:
-
 Inquirer and Node.js
 
-Audio Tutorial: 
+Audio Tutorial: https://watch.screencastify.com/v/anZ4L0LZb0QlRRgDxptX
 ## Usage
 Instructions:
 Clone into my repo then move in the TeamProfileGenerator folder.  Next you will run 'node index.js' in your terminal.  This will initiate the application where you begin answering questions on each member of the team.
