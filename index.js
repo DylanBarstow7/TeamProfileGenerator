@@ -1,16 +1,17 @@
 const inquirer = require('Inquirer');
 const path = require('path');
 const fs = require('fs');
-const Employee = require('./lib/employee.js');
-const Manager = require('./lib/emp types/manager.js.js');
-const Intern = require('./lib/emp types/intern.js.js');
+const Employee = require('./lib/employee');
+const Manager = require('./lib/emp types/manager.js');
+const Intern = require('./lib/emp types/intern.js');
 const Engineer = require('./lib/emp types/engineer.js');
+const { create } = require('domain');
+
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require('./lib/htmlRenderer.js');
-
 
 
 const PORT = 8080;
@@ -139,3 +140,7 @@ function createIntern() {
             
     })
 }
+
+function createTeam() {
+    fs.writeFileSync(outputPath, render(employees), "utf-8");
+};
